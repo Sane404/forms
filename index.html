@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+</head>
+
+<body>
+        <div class="divwrap">
+            <div class="loginButton">Login</div>
+            <div class="registerButton">Register</div>
+        </div>
+        
+    <form class="registerForm">
+        <div class="nickWrap">
+            <label for="nick">Nickname</label>
+            <input type="text" id="nick">
+            <div class="nickErrors">
+                <p class="nLength">At least 3 characters</p>
+            </div>
+        </div>
+        <div class="emailWrap">
+            <label for="email">Email</label>
+            <input type="email" id="email">
+            <div class="emailErrors">
+                <p class="eRror">Invalid email format, use following format <i>test@example.com</i></p>
+            </div>
+        </div>
+        <div class="passWrap">
+            <label for="password">Password</label>
+            <input type="password" id="password">
+            <div class="passErrors">
+                <p class="passRegError">Password must contain 1 capital letter and 1 number</p>
+                <p class="passLengthError">12 characters max</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="submit">Submit</button>
+            <button class="cancelRegister">Cancel</button>
+        </div>
+        
+    </form>
+    <form class="loginForm">
+        <div class="LoginEmailWrap">
+            <label for="loginEmail">Email</label>
+            <input type="email" id="loginEmail">
+        </div>
+        <div class="LoginPassWrap">
+            <label for="loginPassword">Password</label>
+            <input type="password" id="loginPassword">
+        </div>
+        <div class="buttons">
+            <a href ="logged.html" class="loginCheck">Log In</a>
+            <button class="cancelLogin">Cancel</button>
+        </div>
+        
+    </form>
+    <script src="app.js"></script>
+</body>
+
+</html>

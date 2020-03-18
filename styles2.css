@@ -1,0 +1,66 @@
+body{
+    background: linear-gradient(90deg, rgba(95,0,177,1) 40%, rgba(141,210,254,1) 100%);
+    /* background-image: url("theroom89.jpg");
+    /* background-repeat: round; */
+    /* background-size: cover; */
+    font-family: 'Baloo Chettan 2', cursive;
+    
+}
+.message{
+    width: 600px;
+    margin-top: 400px;
+    margin-left: 40px;
+    color:black;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 90px;
+    overflow: hidden;
+    text-align: center;
+    box-sizing: border-box;
+    animation: showBorder 1s ease-in 2.5s forwards;
+}
+.effect{
+    position: absolute;
+    top:0;
+    left:40;
+    bottom:0;
+    background-color:rgba(95,0,177,1);
+    width: 100%;
+    animation: showDiv 5s ease-in forwards;
+}
+.hello{
+    color:white;
+}
+.para{
+    font-size: 60px;
+    color:red;
+}
+.logout{
+    margin-left: 40px;
+    display: block;
+    color:white;
+    width: 600px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 40px;
+    text-transform: uppercase;
+    background-color: dodgerblue;
+    transition: background-color 1s, border 1s;
+}
+.logout:hover{
+    background-color: rgba(95,0,177,1);
+    border: 4px solid dodgerblue;
+}
+@keyframes showDiv{
+    0%{width: 100%;}
+    50%{width: 20%;}
+    100%{width: 0%;}
+}
+@keyframes showBorder{
+    0%{border: 0;}
+    100%{border: 4px solid white;}
+}

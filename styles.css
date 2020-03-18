@@ -1,0 +1,173 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    font-family: 'Baloo Chettan 2', cursive;
+}
+li{
+    list-style:">";
+}
+form{
+    
+    width:300px;
+    padding: 10px;
+    /* border:1px solid black; */
+    box-shadow: 0px 0px 20px 5px rgb(255, 58, 58);
+}
+.valid{
+    border:2px solid green !important; 
+}
+.invalid{
+    border:2px solid rgb(253, 56, 56) !important;
+}
+.registerForm{
+    display: none;
+    position: absolute;
+    top:50%;
+    margin-top:-160px;
+    left:50%;
+    margin-left:-170px;
+}
+.loginForm{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top:50%;
+    margin-top: -127.5px;
+    left:50%;
+    margin-left: -160px;
+}
+.nickWrap,.emailWrap,.passWrap,.LoginEmailWrap,.LoginPassWrap{
+    display: flex;
+    flex-direction: column;
+}
+.nickWrap input,.emailWrap input,.passWrap input,.LoginEmailWrap input,.LoginPassWrap input{
+    height: 35px;
+    background-color: rgb(26, 26, 26);
+    color:white;
+    border:0;
+    outline:none;
+    font-style: 'Baloo Chettan 2', cursive;
+    border-radius: 30px;
+    padding: 5px 0 5px 15px;
+    font-size: 22px;
+}
+.nickWrap label,.emailWrap label,.passWrap label,.LoginEmailWrap label,.LoginPassWrap label{
+    color:white;
+    font-size: 20px;
+    padding: 5px;
+}
+.nickErrors p,.emailErrors p,.passErrors p{
+    margin: 0;
+    padding: 5px;
+}
+.nLength,.eRror,.passRegError,.passLengthError{
+    display: none;
+    color:rgb(253, 56, 56);
+}
+.submit,.cancelRegister,.loginCheck,.cancelLogin{
+    display: block;
+    text-align: center;
+    border-radius: 25px;
+    width: 120px;
+    line-height: 45px;
+    height: 45px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    border: 0;
+    color:white;
+    font-family:inherit;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: rgb(255, 58, 58);
+}
+.loginButton{
+    position: relative;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    padding: 10px 20px 10px 10px;
+    font-size: 35px;
+    position: relative;
+    color: #FFF;
+    background:  #cc5333;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: letter-spacing 1s,background-color 1s;
+}
+.loginButton:hover{
+    letter-spacing: 5px;
+    background-color: dodgerblue;
+}
+.loginButton:hover::after{
+    background-color: dodgerblue;
+}
+.loginButton:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background:  #cc5333;
+    transform-origin: bottom left;
+    transform: skew(-30deg, 0deg);
+    transition:background-color 1s;
+}
+.registerButton{
+    position: relative;
+    width: 250px;
+    height: 50px;
+    font-size: 25px;
+    line-height: 50px;
+    padding: 10px 20px 10px 10px;
+    font-size: 35px;
+    position: relative;
+    color: #FFF;
+    background:  dodgerblue;
+    margin-left: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: letter-spacing 1s,background-color 1s;
+}
+.registerButton:hover{
+    letter-spacing: 5px;
+    background-color: #cc5333;
+}
+.registerButton:hover::after{
+    background-color: #cc5333;
+}
+.registerButton:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background:  dodgerblue;
+    transform-origin: top right;
+    transform: skew(-30deg, 0deg);
+    transition:background-color 1s;
+}
+.divwrap{
+    display: flex;
+    position: absolute;
+    top:50%;
+    margin-top: -35px;
+    left:50%;
+    margin-left: -305px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
